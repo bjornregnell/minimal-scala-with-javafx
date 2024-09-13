@@ -15,6 +15,7 @@
 /* More details on the warning here: 
     https://stackoverflow.com/questions/67854139
     https://github.com/scala/scala-dev/issues/529
+    https://users.scala-lang.org/t/scala-jdk-11-and-jpms/6102/33
 
   If the app does not start you may need to add a classifier in each using-clauses above 
     such as classifier=win or classifier=mac or classifier=linux like so:
