@@ -1,6 +1,6 @@
 # minimal-scala-with-javafx
 
-* A minimal Scala hello-world-app using the Java FX GUI framework, without any other dependencies (such as [ScalaFX](https://github.com/scalafx/scalafx), which you don't need if you want directly use the JavaFX framework) 
+* A minimal Scala hello-world-app using the Java FX GUI framework, without any other dependencies (such as [ScalaFX](https://github.com/scalafx/scalafx), which you don't need if you want to **directly** use the JavaFX framework) 
 
 * Based on https://users.scala-lang.org/t/scala-jdk-11-and-jpms/6102/19 by https://github.com/tarsa
 
