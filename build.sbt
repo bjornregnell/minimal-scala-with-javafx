@@ -2,9 +2,9 @@ name := "javafx-in-scala"
 
 version := "0.1"
 
-scalaVersion := "2.13.2"
+scalaVersion := "3.5.0"
 
-scalacOptions ++= Seq("-unchecked", "-deprecation", "-Xcheckinit", "-encoding", "utf8", "-feature")
+scalacOptions ++= Seq("-unchecked", "-deprecation", "-Wunused:all", "-Wvalue-discard", "-Wsafe-init")
 
 // Fork a new JVM for 'run' and 'test:run', to avoid JavaFX double initialization problems
 fork := true
@@ -17,8 +17,10 @@ lazy val osName = System.getProperty("os.name") match {
   case _ => throw new Exception("Unknown platform!")
 }
 
+lazy val fxVersion = "21.0.4"
+
 // Add JavaFX dependencies
 lazy val javaFXModules = Seq("base", "controls", "fxml", "graphics", "media", "swing", "web")
-libraryDependencies ++= javaFXModules.map( m=>
-  "org.openjfx" % s"javafx-$m" % "14.0.1" classifier osName
+libraryDependencies ++= javaFXModules.map( m => 
+    "org.openjfx" % s"javafx-$m" % fxVersion classifier osName
 )
