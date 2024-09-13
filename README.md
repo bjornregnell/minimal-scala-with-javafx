@@ -2,8 +2,6 @@
 
 * A minimal Scala hello-world-app using the Java FX GUI framework, without any other dependencies (such as [ScalaFX](https://github.com/scalafx/scalafx), which you don't need if you want to **directly** use the JavaFX framework) 
 
-* Based on https://users.scala-lang.org/t/scala-jdk-11-and-jpms/6102/19 by https://github.com/tarsa
-
 * The only things you need on your local box:
   - Install OpenJDK 17 LTS or later (21 LTS recommended) https://adoptopenjdk.net/
   - Install latest Scala at least 3.5.0 from here: https://www.scala-lang.org/
